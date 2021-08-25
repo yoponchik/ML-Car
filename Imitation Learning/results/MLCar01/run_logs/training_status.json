@@ -1,0 +1,65 @@
+{
+    "MLCar": {
+        "checkpoints": [
+            {
+                "steps": 30116241,
+                "file_path": "results\\MLCar01\\MLCar\\MLCar-30116241.onnx",
+                "reward": 121.49218308925629,
+                "creation_time": 1629864333.913613,
+                "auxillary_file_paths": [
+                    "results\\MLCar01\\MLCar\\MLCar-30116241.pt"
+                ]
+            },
+            {
+                "steps": 30499955,
+                "file_path": "results\\MLCar01\\MLCar\\MLCar-30499955.onnx",
+                "reward": 16.989829182624817,
+                "creation_time": 1629865827.5390575,
+                "auxillary_file_paths": [
+                    "results\\MLCar01\\MLCar\\MLCar-30499955.pt"
+                ]
+            },
+            {
+                "steps": 30742178,
+                "file_path": "results\\MLCar01\\MLCar\\MLCar-30742178.onnx",
+                "reward": null,
+                "creation_time": 1629866206.8289273,
+                "auxillary_file_paths": [
+                    "results\\MLCar01\\MLCar\\MLCar-30742178.pt"
+                ]
+            },
+            {
+                "steps": 30753911,
+                "file_path": "results\\MLCar01\\MLCar\\MLCar-30753911.onnx",
+                "reward": -2.4438777869334443,
+                "creation_time": 1629866372.6143076,
+                "auxillary_file_paths": [
+                    "results\\MLCar01\\MLCar\\MLCar-30753911.pt"
+                ]
+            },
+            {
+                "steps": 30875739,
+                "file_path": "results\\MLCar01\\MLCar\\MLCar-30875739.onnx",
+                "reward": -3.0039278268814087,
+                "creation_time": 1629867738.6752615,
+                "auxillary_file_paths": [
+                    "results\\MLCar01\\MLCar\\MLCar-30875739.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 30875739,
+            "file_path": "results\\MLCar01\\MLCar.onnx",
+            "reward": -3.0039278268814087,
+            "creation_time": 1629867738.6752615,
+            "auxillary_file_paths": [
+                "results\\MLCar01\\MLCar\\MLCar-30875739.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.9.0+cu111"
+    }
+}
