@@ -39,18 +39,13 @@ public class MLCar : Agent
         MaxStep = 200000;
     }
 
-    public override void CollectObservations(VectorSensor sensor)
-    {
 
-    }
-    //float direction = Vector3.Dot(transform.forward, checkPoints[currentCheckPoint].forward);
-    //addreward(-1/(float) MaxStep);
 
     public override void OnEpisodeBegin()
     {
         rb.velocity = rb.angularVelocity = Vector3.zero;
-        //tr.localPosition = new Vector3(-211.705f, 164.634f, -130.857f);
-        tr.localPosition = new Vector3(-211.705f, 164.634f, -13.5f);
+        //tr.localPosition = new Vector3(-211.705f, 164.634f, -130.857f);     //the start position starts with straight lane
+        tr.localPosition = new Vector3(-211.705f, 164.634f, -13.5f);   //start position starts right before sharp turn
         tr.localRotation = Quaternion.identity;
 
         for (int i = 0; i < checkPoints.Length; i++)
@@ -132,7 +127,7 @@ public class MLCar : Agent
         if (other.gameObject.CompareTag("CHECKPOINT"))
         {
             StartCoroutine(RevertMaterial(goodMt));
-            AddReward(+0.2f);
+            AddReward(+1/(lastCheckPoints.Length + checkPoints.Length));
             checkPointCount++;
             print("checkPoint");
             print(checkPointCount);
@@ -164,7 +159,7 @@ public class MLCar : Agent
         if (other.gameObject.CompareTag("OFFTRACK"))
         {
             StartCoroutine(RevertMaterial(badMt));
-            AddReward(-10.0f);
+            AddReward(-1.0f);
             EndEpisode();
             checkPointCount = 0;
             print("offtrack");
