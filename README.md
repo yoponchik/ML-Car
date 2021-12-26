@@ -1,7 +1,9 @@
+![image](https://user-images.githubusercontent.com/57009810/147415408-89955cda-2519-4bb0-a51b-ca1d8fae1ddd.png)
 # ML-Project
-Imitation Learning
 
 Imitation Learning for AI car using rays.
+
+
 
 
 환경설정
