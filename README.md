@@ -64,7 +64,7 @@ Mean Reward: 20.577 (약 80%?)
 개선할 점
 --------
 Reward System 수정
-Min Reward: -1
-Max Reward: 1
+  Min Reward: -1
+  Max Reward: 1
 모방학습한 모델을 강화학습으로 더 개선 
 
