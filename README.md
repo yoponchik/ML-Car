@@ -3,6 +3,11 @@
 
 Imitation Learning for AI car using rays.
 
+<h2>Project Details</h2>
+
+**Project Date:** 2021.09
+
+**Dev Tools:** Unity Engine, ML Agents
 
 
 
